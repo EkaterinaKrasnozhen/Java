@@ -368,21 +368,21 @@
 // Работа с файлами
 
 import java.io.*;
-public class program {
-    public static void main(String[] args) {
-        try (FileWriter fw = new FileWriter("fileJava.txt", false)) { // определили экземпляр fw, 
-            //связали файл с переменной fw, false или true - чтение, дозапись, уже имеющего или создать новый
-            fw.write("line 1");
-            fw.append('\n');
-            fw.append('2');
-            fw.append('\n');
-            fw.write("line 3");
-            fw.flush();
-        }catch (IOException ex) { // могут возникать ошибки и посмотреть их
-            System.out.println(ex.getMessage());
-        }
-    }    
-}
+// public class program {
+//     public static void main(String[] args) {
+//         try (FileWriter fw = new FileWriter("fileJava.txt", false)) { // определили экземпляр fw, 
+//             //связали файл с переменной fw, false или true - чтение, дозапись, уже имеющего или создать новый
+//             fw.write("line 1");
+//             fw.append('\n');
+//             fw.append('2');
+//             fw.append('\n');
+//             fw.write("line 3");
+//             fw.flush();
+//         }catch (IOException ex) { // могут возникать ошибки и посмотреть их
+//             System.out.println(ex.getMessage());
+//         }
+//     }    
+// }
 
 // Чтение посимвольно
 
@@ -405,14 +405,14 @@ public class program {
 
 // чтение построчно
 
-// public class program {
+public class program {
 
-//     public static void main(String[] args) throws Exception{
-//         BufferedReader br = new BufferedReader(new FileReader("fileJava.txt"));
-//         String str;
-//         while((str = br.readLine()) != null) {
-//             System.out.printf("%s\n", str);
-//         }
-//         br.close();
-//     }
-// }
+    public static void main(String[] args) throws Exception{
+        BufferedReader br = new BufferedReader(new FileReader("fileJava.txt"));
+        String str;
+        while((str = br.readLine()) != null) {
+            System.out.printf("%s\n", str);
+        }
+        br.close();
+    }
+}
