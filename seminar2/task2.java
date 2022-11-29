@@ -1,3 +1,5 @@
+package seminar2;
+
 // Задание 2.
 
 // Напишите метод, который сжимает строку по правилу: 
@@ -11,7 +13,6 @@ public class task2 {
         int count = 1;
         Character ch = s.charAt(0);
 
-        int j = s.length()-1;
         for (int index = 1; index < s.length(); index++) {
             if (s.charAt(index) == ch) {
                 count++;    
