@@ -1,11 +1,11 @@
-package seminar2;
+
 
 // Задание 2.
 
 // Напишите метод, который сжимает строку по правилу: 
 // На входе: aaaabbbcdd
 // На выходе: a4b3cd2
-
+package seminar2;
 public class task2 {
     public static void main(String[] args) {
         String s = "aaaabbbcddx";
