@@ -20,8 +20,14 @@ public class task1 {
         int n = iScanner.nextInt();
         iScanner.close();
         
+        // for (int index = 0; index < n/2; index++) {
+        //     System.out.printf("%s%s", c1, c2);
+        // }
+        StringBuilder sb = new StringBuilder();
         for (int index = 0; index < n/2; index++) {
-            System.out.printf("%s%s", c1, c2);
+            sb.append(c1);
+            sb.append(c2);
         }
+        System.out.println(sb);
     }
 }
