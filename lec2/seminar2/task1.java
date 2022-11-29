@@ -23,7 +23,7 @@ public class task1 {
         // for (int index = 0; index < n/2; index++) {
         //     System.out.printf("%s%s", c1, c2);
         // }
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(); //быстрее
         for (int index = 0; index < n/2; index++) {
             sb.append(c1);
             sb.append(c2);
