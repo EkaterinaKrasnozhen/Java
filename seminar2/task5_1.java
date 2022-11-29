@@ -2,6 +2,8 @@ package seminar2;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class task5_1 {
     public static void main(String[] args) {
@@ -21,6 +23,19 @@ public class task5_1 {
             // e.printStackTrace();
         } finally {
             System.out.println(line);
+        }
+
+        File dir = new File(".");
+        System.out.println(dir.getAbsolutePath());
+        File [] fileList = dir.listFiles();
+        List<String> l = new ArrayList<>();
+        for (File file : fileList) {
+            if (file.isFile()) {
+                System.out.printf("%s\n", file.getName());
+            }
+            else {
+                System.out.println(file.getName());
+            }
         }
     }
 }
