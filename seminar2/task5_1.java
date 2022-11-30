@@ -2,6 +2,8 @@ package seminar2;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +28,7 @@ public class task5_1 {
         }
 
         File dir = new File(".");
-        System.out.println(dir.getAbsolutePath());
+
         File [] fileList = dir.listFiles();
         List<String> l = new ArrayList<>();
         for (File file : fileList) {
@@ -35,6 +37,14 @@ public class task5_1 {
             }
             else {
                 System.out.println(file.getName());
+            }
+            try (FileWriter fw = new FileWriter("fileJava.txt", false)) { 
+                for (File file1 : fileList) {
+                   fw.write(file1.toString());
+                   fw.write("\n");
+                }
+            }catch (IOException e) { // могут возникать ошибки и посмотреть их
+                //System.out.println(ex.getMessage());
             }
         }
     }
