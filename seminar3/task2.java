@@ -39,6 +39,6 @@ public class task2 {
         System.out.println();
         while (col1.hasNext()) {
             System.out.printf("Планета %s = %d раз, ",col1.next(), col2.next());  
-        }    
+        }
     }
 }
