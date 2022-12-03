@@ -4,6 +4,7 @@
 package seminar3;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
@@ -32,7 +33,12 @@ public class task2 {
             count = 0;
             s1.add(s[index]);
         }
-        System.out.println(arr);
-        System.out.println(s1);
+
+        Iterator<String> col1 = s1.iterator();
+        Iterator<Integer> col2 = arr.iterator();
+        System.out.println();
+        while (col1.hasNext()) {
+            System.out.printf("Планета %s = %d раз, ",col1.next(), col2.next());  
+        }    
     }
 }
