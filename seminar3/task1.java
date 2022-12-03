@@ -12,7 +12,7 @@ public class task1 {
         List<Integer> l = new ArrayList<Integer>(10);
         for (int index = 0; index < 10; index++) {
             Random rnd = new Random();
-            int j = rnd.nextInt(0,100);
+            int j = rnd.nextInt(0, 100);
             l.add(j);
         }
         System.out.println(l);
@@ -20,5 +20,4 @@ public class task1 {
         l.sort(null);
         System.out.println(l);
     }
-    
 }
