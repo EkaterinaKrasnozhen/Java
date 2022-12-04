@@ -83,16 +83,3 @@ import java.util.Stack;
 //3  когда приходит знак действия, извлекаются верхние 2 эл-та: 3*2 -> 6 след знак 6+1=7
 //2                                                                    1
 //1
-
-public class linkedList {
-
-    public static void main(String[] args) {
-        Stack<Integer> st = new Stack<>();
-        st.push(1);
-        st.push(123);
-        st.push(12);
-        System.out.println(st.pop());//12
-        System.out.println(st.pop());//123
-        System.out.println(st.pop());//1
-    }
-}
