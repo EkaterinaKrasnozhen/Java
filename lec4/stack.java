@@ -1,6 +1,12 @@
 package lec4;
 import java.util.Stack;
+// Stack (тот кто пришел первым, будет обработан в последнюю очередь) в постфиксной записи
 
+//1+2*3 = 7
+//123*+
+//3  когда приходит знак действия, извлекаются верхние 2 эл-та: 3*2 -> 6 след знак 6+1=7
+//2                                                                    1
+//1
 // public class stack {
 //     private static boolean isDigit(String s) throws NumberFormatException {
 //         try {
