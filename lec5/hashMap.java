@@ -10,7 +10,7 @@ public class hashMap {
         db.putIfAbsent(2, "two");
         //System.out.println(db);
         for (var item : db.entrySet()) {
-            System.out.printf("[%d: %s]\n", item.getKey(), item.getValue()); //[1: one] [2: two]
+            System.out.printf("[%d: %s]\n", item.getKey(), item.getValue()); //[1: one] 
         }
 
     }
