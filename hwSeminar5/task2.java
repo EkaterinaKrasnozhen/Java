@@ -53,12 +53,12 @@ public class task2 {
         Collections.sort(sortArray);//сортируем
         Collections.reverse(sortArray);//реверс в обратном порядке
         System.out.println(sortArray); //не пойму как этот список связать с именами (ключами) из data
-        // for (var i : data.entrySet()) {
-        //     for (int e : sortArray) {
-        //        if (i.getValue().equals(e)) {
-        //            result.put(i.getKey(), e); 
-        //        } 
-        //     }
-        // }System.out.println(result);
+        for (var i : data.entrySet()) {
+            for (int e : sortArray) {
+               if (i.getValue().equals(e)) {
+                   result.put(i.getKey(), e); 
+               } 
+            }
+        }System.out.println(result);
     }
 }
