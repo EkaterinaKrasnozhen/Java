@@ -1,5 +1,10 @@
 package hwSeminar6;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 import java.util.Scanner;
+
+import org.w3c.dom.ranges.Range;
 
 public class finalWork {
     public static void main(String[] args) {
@@ -8,10 +13,22 @@ public class finalWork {
         noteBooks nb3 = new noteBooks("Lenovo", "IdeaPad", "windows", "black", 16, 256, 80000);
         noteBooks nb4 = new noteBooks("HP", "15s-eq2136ur", "Windows", "black", 8, 256, 77000);
         noteBooks nb5 = new noteBooks("Asus", "X415Ea", "linux", "silver", 8, 256, 40000);
-        noteBooks nb6 = new noteBooks("Huawey", "Mattebook d15", "ios", "silver", 8, 256, 45000);
+        noteBooks nb6 = new noteBooks("Huawei", "Mattebook d15", "ios", "silver", 8, 256, 45000);
         noteBooks[] nbs = new noteBooks[]{nb1, nb2, nb3, nb4, nb5, nb6};
         System.out.println(noteBooks.getByFirm(nbs, "Huawey"));
-    
+        Map <Integer, String> db = new HashMap<>();
+        db.put(1, "Apple");
+        db.put(2, "Acer");
+        db.put(3, "Lenovo");
+        db.put(4, "HP");
+        db.put(5, "Asus");
+        db.put(6, "Huawei");
+        Random rnd = new Random();
+        for (noteBooks n : nbs) {
+            for (int i : Range) {
+                
+            }
+        }
     }
 
     // public static Integer getValueFromUser() {
