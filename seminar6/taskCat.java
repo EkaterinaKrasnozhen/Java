@@ -9,10 +9,10 @@ package seminar6;
 public class taskCat {
     public static void main(String[] args) {
         Cats cat1 = new Cats(1, "Вася","брит", "серый", 3, true, 5);
-        Cats cat2 = new Cats(1, "Guy","двор", "черный", 5, true, 4);
-        Cats cat3 = new Cats(1, "Ася","голубая", "темно серый", 1, false, 3);
+        Cats cat2 = new Cats(2, "Guy","двор", "черный", 5, true, 4);
+        Cats cat3 = new Cats(3, "Ася","голубая", "темно серый", 1, false, 3);
         //System.out.println(cat1.toString());
-        //System.out.println(cat1.toString2(1));
+        System.out.println(cat1.toString2(3));
         Cats[] cats = new Cats[]{cat1,cat2, cat3};
         System.out.println(Cats.getCatGender(cats, true)); 
     }
