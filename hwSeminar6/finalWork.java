@@ -55,7 +55,8 @@ public class finalWork {
             else if (get_user.equals("0")){
                 System.out.printf("buy");
             }
-            iScanner.close(); 
-        }      
+            iScanner.close(); //тут работает, но тогда не возобновляется снова цикл запроса у пользователя
+        }
+        //iScanner.close(); //не работает тут    
     }         
 }
